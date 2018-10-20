@@ -62,6 +62,8 @@ class Ideas extends React.Component {
     axios.post(uri + "ideas/add", data)
       .then(function(response) {
         console.log(response);
+        this.setState({});
+        //alert("Your idea has been added. Refresh the page to see it.");
       })
       .catch(function(error) {
         console.log(error);
