@@ -9,8 +9,6 @@ class IdeaBox extends React.Component {
     boxColor: "pink"
   }
 
-
-
   getRandomColor() {
     var random = Math.floor(Math.random() * 3);
     console.log(this.state.boxColor);
