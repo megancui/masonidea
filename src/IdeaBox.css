@@ -6,6 +6,7 @@
   display: inline-block;
   border-radius: 8px;
   box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+  position: relative;
 }
 
 .IdeaBox__title {
@@ -29,6 +30,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   text-align: left;
+  display: inline-block;
 }
 
 .IdeaBox__tag {
@@ -37,4 +39,14 @@
   display: inline;
   margin-right: 10px;
   padding: 2px 5px;
+}
+
+.IdeaBox__claimed {
+  display: inline-block;
+  position: absolute;
+  margin-right: 20px;
+  right: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
 }

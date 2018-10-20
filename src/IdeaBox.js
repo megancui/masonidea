@@ -6,7 +6,12 @@ import './IdeaBox.css';
 
 class IdeaBox extends React.Component {
   state = {
-    boxColor: "pink"
+    boxColor: "pink",
+    tags: this.props.tags,
+    title: this.props.title,
+    description: this.props.description,
+    isClaimed: this.props.isClaimed,
+
   }
 
   getRandomColor() {
@@ -40,15 +45,18 @@ class IdeaBox extends React.Component {
     return (
       <div className="IdeaBox__container" style={{backgroundColor: this.state.boxColor}}>
         <div className="IdeaBox__title">
-          {this.props.title}
+          {this.state.title}
         </div>
         <div className="IdeaBox__description">
-          {this.props.description}
+          {this.state.description}
         </div>
         <div className="IdeaBox__tags">
-          { this.props.tags.map((item, i) => {
+          { this.state.tags.map((item, i) => {
             return (<div className="IdeaBox__tag" key={i} style={{color: this.state.boxColor}}>#{item}</div>)
           })}
+        </div>
+        <div className="IdeaBox__claimed">
+          { this.state.isClaimed ? "Claimed" : "Open" }
         </div>
       </div>
     );
