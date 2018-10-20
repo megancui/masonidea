@@ -33,10 +33,12 @@ class App extends Component {
       <div className="App">
         <div>
           {this.state.ideas.map((item, i) => {
-            return (<IdeaBox title={item.fields.idea} description={item.fields.description} tags={["A", "B", "C"]} isClaimed={ item.fields.isClaimed == "0" ? false : true} />)
+            return (<IdeaBox title={item.fields.idea} description={item.fields.description} tags={item.fields.tags} isClaimed={ item.fields.isClaimed == "0" ? false : true} />)
           })}
         </div>
+        <div>
 
+        </div>
       </div>
     );
   }
