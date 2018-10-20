@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Masonry from 'react-masonry-component';
 
 import IdeaBox from './IdeaBox';
 import IdeasAPI from './API/Ideas';
+import Form from './Form';
 
 // <IdeaBox title="IDEA 1" description="DESCRIPTION 1" tags={["A", "B", "C"]} isClaimed={true} />
 // <IdeaBox title="IDEA 2" description="DESCRIPTION 2" tags={["1", "2", "3"]} isClaimed={false} />
@@ -17,11 +17,6 @@ import IdeasAPI from './API/Ideas';
 class App extends Component {
   state = {
     ideas: [],
-    title: "",
-    description: "",
-    h1: "",
-    h2: "",
-    h3: "",
   }
 
   componentDidMount() {
@@ -34,46 +29,20 @@ class App extends Component {
     })
   }
 
-  updateState = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value
-    })
-  }
-
-  getData() {
-    var data = {
-      "idea": this.state.title,
-      "description": this.state.description,
-      "h1": this.state.h1,
-      "h2": this.state.h2,
-      "h3": this.state.h3,
-      "isClaimed": 0
-    }
-    return data;
-  }
-
   render() {
     return (
       <div className="App">
-        <br/>
-        <label>Title: </label><input type="text" value={this.state.title} name="title" onChange={evt => this.updateState(evt)} /><br/>
-        <label>Description: </label><input type="text" value={this.state.description} name="description" onChange={evt => this.updateState(evt)} /><br/>
-        <label>Hashtag #1: </label><input type="text" value={this.state.h1} name="h1" onChange={evt => this.updateState(evt)} /><br/>
-        <label>Hashtag #2: </label><input type="text" value={this.state.h2} name="h2" onChange={evt => this.updateState(evt)} /><br/>
-        <label>Hashtag #3: </label><input type="text" value={this.state.h3} name="h3" onChange={evt => this.updateState(evt)} /><br/>
-        <button onClick={() => IdeasAPI.addIdea(this.getData())}>Submit info here</button>
+        <div className="App__title">
+          <h1>Mason's Big Idea Hunt</h1>
+        </div>
 
-        <br/>
-
-        <Masonry>
-          {this.state.ideas.map((item, i) => {
-            return (<IdeaBox title={item.fields.idea} description={item.fields.description} tags={item.fields.tags} isClaimed={ item.fields.isClaimed == "0" ? false : true} />)
-          })}
+        <Masonry className="App__masonry">
+            <Form />
+            {this.state.ideas.map((item, i) => {
+              return (<IdeaBox key={i} title={item.fields.idea} description={item.fields.description} tags={item.fields.tags} isClaimed={ item.fields.isClaimed === "0" ? false : true} />)
+            })}
         </Masonry>
 
-        <div>
-
-        </div>
       </div>
     );
   }

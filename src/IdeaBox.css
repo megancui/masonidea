@@ -2,11 +2,13 @@
   width: 300px;
   padding: 20px;
   margin-right: 20px;
+  margin-left: 20px;
   margin-bottom: 20px;
   display: inline-block;
   border-radius: 8px;
   box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
   position: relative;
+  text-align: left;
 }
 
 .IdeaBox__title {

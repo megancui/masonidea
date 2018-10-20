@@ -1,0 +1,61 @@
+
+
+.App__title {
+  font-family: "Caveat Brush", cursive;
+  font-size: 30px;
+  text-align: center;
+  color: #2a546f;
+}
+
+.App__informationContainer {
+  text-align: center;
+  width: 100%;
+}
+
+.App__informationBox {
+  width: 300px;
+  color: #2a546f;
+  font-weight: 700;
+  display: inline-block;
+  border: 8px #2a546f solid;
+  border-radius: 16px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.App__informationBox h2 {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App__informationBox p {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.App__informationBox--highlight {
+  background-color: #e25b52;
+  text-align: left;
+  border: none;
+  color: white;
+  box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+  height: 100%;
+}
+
+.App__informationBox--highlight ol {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.App__masonry {
+  text-align: center;
+}

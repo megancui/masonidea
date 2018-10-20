@@ -1,0 +1,86 @@
+.Form__container {
+  background-color: #e25b52;
+  width: 300px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+  border-radius: 8px;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+}
+
+.Form__title {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.Form__section {
+  margin-top: 10px;
+}
+
+.Form__section--flex {
+  display: flex;
+}
+
+.Form__container input {
+  background-color: #e25b52;
+  border: 1px white solid;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 20px;
+  flex: 2;
+}
+
+.Form__container label {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.Form__container p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 0;
+}
+
+.Form__container textarea {
+  resize: none;
+  width: 100%;
+  background-color: #e25b52;
+  border: 1px white solid;
+  border-radius: 5px;
+}
+
+.Form__tag {
+  background-color: white;
+  opacity: 0.6;
+  color: #e25b52;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 45%;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+
+.Form__tag:hover {
+  opacity: 1;
+}
+
+.Form__tag--selected {
+  opacity: 1;
+}
