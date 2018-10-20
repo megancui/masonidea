@@ -1,0 +1,40 @@
+.IdeaBox__container {
+  width: 300px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.IdeaBox__title {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.IdeaBox__description {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.IdeaBox__tags {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+.IdeaBox__tag {
+  background-color: white;
+  border-radius: 6px;
+  display: inline;
+  margin-right: 10px;
+  padding: 2px 5px;
+}

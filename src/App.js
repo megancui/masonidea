@@ -2,24 +2,19 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import IdeaBox from './IdeaBox';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <IdeaBox title="IDEA 1" description="DESCRIPTION 1" tags={["A", "B", "C"]} color="red" />
+        <IdeaBox title="IDEA 2" description="DESCRIPTION 2" tags={["1", "2", "3"]} color="red" />
+        <IdeaBox title="IDEA 3" description="DESCRIPTION 3" tags={["1", "2", "3"]} color="red" />
+        <IdeaBox title="IDEA 4" description="DESCRIPTION 4" tags={["1", "2", "3"]} color="red" />
+        <IdeaBox title="IDEA 5" description="DESCRIPTION 5" tags={["1", "2", "3"]} color="red" />
+        <IdeaBox title="IDEA 6" description="DESCRIPTION 6" tags={["1", "2", "3"]} color="red" />
+        <IdeaBox title="IDEA 7" description="DESCRIPTION 7" tags={["1", "2", "3"]} color="red" />
       </div>
     );
   }
