@@ -23,10 +23,20 @@ class App extends Component {
     IdeasAPI.getIdeas(this.loadIdeas);
   }
 
+  // componentDidUpdate() {
+  //   IdeasAPI.getIdeas(this.loadIdeas);
+  // }
+
   loadIdeas = (data) => {
+    console.log(data);
     this.setState({
       ideas: data,
     })
+  }
+
+  rerender = () => {
+    //console.log("rerender");
+    IdeasAPI.getIdeas(this.loadIdeas);
   }
 
   render() {
@@ -37,9 +47,9 @@ class App extends Component {
         </div>
 
         <Masonry className="App__masonry">
-            <Form />
+            <Form callback={this.rerender}/>
             {this.state.ideas.map((item, i) => {
-              return (<IdeaBox key={i} title={item.fields.idea} description={item.fields.description} tags={item.fields.tags} isClaimed={ item.fields.isClaimed === "0" ? false : true} />)
+              return (<IdeaBox key={item.id} title={item.fields.idea} description={item.fields.description} tags={item.fields.tags} isClaimed={ item.fields.isClaimed === 0 ? false : true} />)
             })}
         </Masonry>
 

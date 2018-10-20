@@ -31,7 +31,7 @@ class Ideas extends React.Component {
         var data = response.data;
 
         for (var i = 0; i < data.length; i++) {
-          console.log(data);
+          //console.log(data);
           data[i].fields.tags = [];
 
           if (data[i].fields.h1 !== "") {
@@ -58,11 +58,13 @@ class Ideas extends React.Component {
       })
   }
 
-  static addIdea(data) {
+  static addIdea(data, callback) {
+
     axios.post(uri + "ideas/add", data)
       .then(function(response) {
         console.log(response);
-        alert("Your idea has been added. Refresh the page to see it.");
+        callback();
+        //alert("Your idea has been added. Refresh the page to see it.");
       })
       .catch(function(error) {
         console.log(error);

@@ -10,6 +10,8 @@ class Form extends React.Component {
     h2: "",
     h3: "",
     only3: "",
+    name: "",
+    email: "",
   }
 
   updateState = (e) => {
@@ -25,7 +27,9 @@ class Form extends React.Component {
       "h1": this.state.h1,
       "h2": this.state.h2,
       "h3": this.state.h3,
-      "isClaimed": 0
+      "isClaimed": 0,
+      "name": this.state.name,
+      "email": this.state.email,
     }
     return data;
   }
@@ -105,15 +109,19 @@ class Form extends React.Component {
     return (
       <div className="Form__container">
         <div className="Form__title">ADD YOUR IDEA</div>
+          <div className="Form__number">1</div>
         <div className="Form__section Form__section--flex">
+
           <label>Name it: </label>
           <input type="text" value={this.state.title} name="title" onChange={evt => this.updateState(evt)} />
         </div>
         <div className="Form__section">
+          <div className="Form__number">2</div>
           <label>Describe it: </label>
           <textarea value={this.state.description} name="description" onChange={evt => this.updateState(evt)}></textarea>
         </div>
         <div className="Form__section">
+          <div className="Form__number">3</div>
           <label>Tag it:</label>
           <p>Choose up to {this.getNumTags()} more hashtag(s).</p>
           <div className={"Form__tag " + this.getSelected("cafeteria")} onClick={() => this.handleClick("cafeteria")}>
@@ -137,7 +145,16 @@ class Form extends React.Component {
         </div>
 
         <div className="Form__section">
-          <button onClick={() => IdeasAPI.addIdea(this.getData())}>Submit info here</button>
+          <div className="Form__number">4</div>
+            <div className="Form__section--flex" style={{marginBottom: "5px"}}>
+              <label>Your name: </label>
+              <input type="text" value={this.state.name} name="name" onChange={evt => this.updateState(evt)} />
+            </div>
+            <div className="Form__section--flex" style={{marginBottom: "5px"}}>
+              <label>Your email: </label>
+              <input type="text" value={this.state.email} name="email" onChange={evt => this.updateState(evt)} />
+            </div>
+          <button className="Form__submit" onClick={() => IdeasAPI.addIdea(this.getData(), this.props.callback)}>Submit it</button>
         </div>
 
       </div>

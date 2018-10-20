@@ -5,7 +5,6 @@
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
-  box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
   border-radius: 8px;
   text-align: left;
   padding: 20px;
@@ -18,10 +17,11 @@
   font-size: 30px;
   color: white;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .Form__section {
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .Form__section--flex {
@@ -35,6 +35,8 @@
   width: 100%;
   font-size: 20px;
   flex: 2;
+  color: white;
+  padding: 5px;
 }
 
 .Form__container label {
@@ -59,6 +61,8 @@
   background-color: #e25b52;
   border: 1px white solid;
   border-radius: 5px;
+  color: white;
+  padding: 2px;
 }
 
 .Form__tag {
@@ -72,7 +76,7 @@
   margin-right: 5px;
   width: 45%;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
   transition: opacity .2s;
 }
@@ -83,4 +87,32 @@
 
 .Form__tag--selected {
   opacity: 1;
+}
+
+.Form__submit {
+  background-color: white;
+  color: #e25b52;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  float: right;
+  margin-top: 5px;
+}
+
+.Form__submit:hover {
+  box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.Form__number {
+  font-family: "Caveat Brush", cursive;
+  font-size: 20px;
+  background-color: white;
+  color: #e25b52;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  margin-bottom: 3px;
 }

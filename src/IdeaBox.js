@@ -11,7 +11,6 @@ class IdeaBox extends React.Component {
     title: this.props.title,
     description: this.props.description,
     isClaimed: this.props.isClaimed,
-
   }
 
   getRandomColor() {
@@ -52,7 +51,13 @@ class IdeaBox extends React.Component {
         </div>
         <div className="IdeaBox__tags">
           { this.state.tags.map((item, i) => {
-            return (<div className="IdeaBox__tag" key={i} style={{color: this.state.boxColor}}>#{item}</div>)
+            console.log(item);
+            if (item !== undefined) {
+              return (<div className="IdeaBox__tag" key={i} style={{color: this.state.boxColor}}>#{item}</div>)
+            }
+            else {
+              return "";
+            }
           })}
         </div>
         <div className="IdeaBox__claimed">
