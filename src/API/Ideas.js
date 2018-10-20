@@ -3,6 +3,15 @@ import axios from 'axios';
 
 const uri = "https://bigideahunt.herokuapp.com/";
 
+//    pdata = {
+//   "idea": "10010100",
+//   "h1": "cafeteria",
+//   "h2": "fun",
+//   "h3": "experience",
+//   "description": "this is my description",
+//   "isClaimed": 0
+// }
+
 class Ideas extends React.Component {
   static updateIdea200() {
     axios.get(uri + "times")
@@ -25,13 +34,13 @@ class Ideas extends React.Component {
           console.log(data);
           data[i].fields.tags = [];
 
-          if (data[i].fields.h1 != "") {
+          if (data[i].fields.h1 !== "") {
             data[i].fields.tags[0] = data[i].fields.h1;
 
-            if (data[i].fields.h2 != "") {
+            if (data[i].fields.h2 !== "") {
               data[i].fields.tags[1] = data[i].fields.h2;
 
-              if (data[i].fields.h3 != "") {
+              if (data[i].fields.h3 !== "") {
                 data[i].fields.tags[2] = data[i].fields.h3;
               }
             }
@@ -50,7 +59,13 @@ class Ideas extends React.Component {
   }
 
   static addIdea(data) {
-
+    axios.post(uri + "ideas/add", data)
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
   }
 }
 
