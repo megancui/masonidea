@@ -43,7 +43,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App__title">
-          <h1>Mason's Big Idea Hunt</h1>
+          <h1>Mason’s Big Idea Hunt</h1>
         </div>
 
         <Masonry className="App__masonry">
