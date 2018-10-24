@@ -44,7 +44,7 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <div className="App__title">
-          <h1>Mason's Big Idea Hunt</h1>
+          <h1>Ignite Your Vision</h1>
         </div>
 
         <Masonry className="App__masonry">
