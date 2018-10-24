@@ -5,7 +5,7 @@ import Masonry from 'react-masonry-component';
 import IdeaBox from './IdeaBox';
 import IdeasAPI from './API/Ideas';
 import Form from './Form';
-
+import {NavBar} from './NavBar';
 // <IdeaBox title="IDEA 1" description="DESCRIPTION 1" tags={["A", "B", "C"]} isClaimed={true} />
 // <IdeaBox title="IDEA 2" description="DESCRIPTION 2" tags={["1", "2", "3"]} isClaimed={false} />
 // <IdeaBox title="IDEA 3" description="DESCRIPTION 3" tags={["1", "2", "3"]} isClaimed={true} />
@@ -42,6 +42,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <NavBar />
         <div className="App__title">
           <h1>Mason's Big Idea Hunt</h1>
         </div>
