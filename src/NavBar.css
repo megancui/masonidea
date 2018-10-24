@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+
+  padding: 0;
+}
+.NavBar-overall {
+  height: 40px;
+  width: 100vw;
+  background-color: #2a546f;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.NavBar-blocks {
+  float: right;
+  margin-left: 20px;
+  border-radius: 25px;
+  padding: 1px 2px 1px 2px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+.NavBar-blocks:hover {
+  /*margin-top: 1.6vh;
+  margin-left: .6vw;
+  border: solid black 0.4vh;*/
+  color: #f78d85;
+}
+.NavBar-blocks:last-child:hover {
+  color: #2a546f;
+}
+.NavBar-add-an-idea {
+  background-color: #e25b52;
+  padding: 0.1vh 0.8vw 0.1vh 0.8vw;
+  margin-right: 1vw;
+}
