@@ -53,7 +53,7 @@ class App extends Component {
           <p>Mason High School's Big Idea Hunt</p>
         </div>
 
-        <Masonry className="App__masonry">
+        <Masonry className="App__masonry" options={{transitionDuration: 50}}>
           <Form callback={this.rerender}/>
         { this.state.loaded ?
             this.state.ideas.map((item, i) => {

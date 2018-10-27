@@ -49,6 +49,7 @@ class IdeaBox extends React.Component {
   }
 
   closeModal = () => {
+    console.log("close");
     this.setState({
       showModal: false,
     }, () => {this.state.rerender()});
@@ -105,6 +106,7 @@ class IdeaBox extends React.Component {
             { this.state.isClaimed ? "Claimed" : "Open" }
           </div>
         </div>
+        {!this.state.isClaimed ?
 
         <ReactModal className="IdeaBox__modal" isOpen={this.state.showModal} contentLabel="Minimal Modal Example">
           <h1>Claim This Idea</h1>
@@ -127,6 +129,14 @@ class IdeaBox extends React.Component {
           </div>
           <button className="Modal__submit" onClick={this.submitClaim}>Submit it</button>
         </ReactModal>
+
+        :
+
+        <ReactModal className="IdeaBox__modal" isOpen={this.state.showModal} contentLabel="Minimal Modal Example">
+          <h1>This idea has already been claimed.</h1>
+          <div className="Modal__close" onClick={this.closeModal}>x</div>
+        </ReactModal>
+      }
 
       </div>
     );
