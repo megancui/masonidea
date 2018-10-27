@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import "./NavBar.css";
 /*import { Home } from "./Home";
 import { Mission } from "./Mission";*/
