@@ -1,10 +1,20 @@
 
 
-.App__title {
+.App__title h1 {
   font-family: "Caveat Brush", cursive;
-  font-size: 30px;
+  font-size: 80px;
   text-align: center;
   color: #2a546f;
+  margin-top: 20px;
+   margin-bottom: 10px;
+}
+
+.App__title p {
+  font-family: "Roboto", cursive;
+  text-align: center;
+  color: #2a546f;
+  font-size: 30px;
+  margin-top: 0px;
 }
 
 .App__informationContainer {
@@ -58,4 +68,12 @@
 
 .App__masonry {
   text-align: center;
+}
+
+.App__loading {
+  top: auto !important;
+  left: auto !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
 }
