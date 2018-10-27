@@ -32,7 +32,7 @@ export class Team extends React.Component {
         <NavBar />
         <div className="Team-overall">
           <div className="Team-student_section">
-            <span>Students</span>
+            <span>Our Team</span>
           </div>
           <div className="Team-card">
             <img src={megan} alt="megan" />
