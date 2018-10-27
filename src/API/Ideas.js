@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 const uri = "https://bigideahunt.herokuapp.com/";
+//const uri = "https://localhost:5000";
 
 //    pdata = {
 //   "idea": "10010100",
@@ -63,6 +64,19 @@ class Ideas extends React.Component {
     axios.post(uri + "ideas/add", data)
       .then(function(response) {
         console.log(response);
+        callback();
+        //alert("Your idea has been added. Refresh the page to see it.");
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
+  }
+
+  static claimIdea(data, callback) {
+    axios.post(uri + "ideas/claim", data)
+      .then(function(response) {
+        console.log(response);
+        console.log("sent");
         callback();
         //alert("Your idea has been added. Refresh the page to see it.");
       })
