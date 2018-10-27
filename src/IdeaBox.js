@@ -69,7 +69,7 @@ class IdeaBox extends React.Component {
       email: this.state.email,
     }
 
-    IdeasAPI.claimIdea(data, () => {});
+    IdeasAPI.claimIdea(data, this.closeModal);
   }
 
   callback = () => {
