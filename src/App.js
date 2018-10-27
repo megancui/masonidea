@@ -5,7 +5,7 @@ import Masonry from 'react-masonry-component';
 import IdeaBox from './IdeaBox';
 import IdeasAPI from './API/Ideas';
 import Form from './Form';
-import {NavBar} from './NavBar';
+import { NavBar } from './NavBar';
 
 import ReactLoading from 'react-loading';
 

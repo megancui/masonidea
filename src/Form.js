@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component, propTypes } from 'react';
 import './Form.css';
 import IdeasAPI from './API/Ideas';
+//import Textarea from 'react-textarea-count';
 
-class Form extends React.Component {
+class Form extends Component {
   state = {
     title: "",
     description: "",
@@ -12,11 +13,13 @@ class Form extends React.Component {
     only3: "",
     name: "",
     email: "",
+    charsleft: 150
   }
 
   updateState = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
+      charsleft: 150 - e.target.value.length
     })
   }
 
@@ -111,15 +114,17 @@ class Form extends React.Component {
         <div className="Form__title">ADD YOUR IDEA</div>
           <div className="Form__number">1</div>
         <div className="Form__section Form__section--flex">
-
           <label>Name it: </label>
-          <input type="text" value={this.state.title} name="title" onChange={evt => this.updateState(evt)} />
+          <input maxLength="30" type="text" value={this.state.title} name="title" onChange={evt => this.updateState(evt)} />
         </div>
+
         <div className="Form__section">
           <div className="Form__number">2</div>
           <label>Describe it: </label>
-          <textarea value={this.state.description} name="description" onChange={evt => this.updateState(evt)}></textarea>
+          <textarea maxLength="150" value={this.state.description} name="description" onChange={evt => this.updateState(evt)}></textarea>
+          <p style={{textAlign: "right"}}>{this.state.charsleft} character(s) remaining</p>
         </div>
+
         <div className="Form__section">
           <div className="Form__number">3</div>
           <label>Tag it:</label>

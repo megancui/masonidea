@@ -28,6 +28,10 @@
   display: flex;
 }
 
+.Form__p {
+  margin-bottom: 20px;
+}
+
 .Form__container input {
   background-color: #e25b52;
   border: 1px white solid;
@@ -63,11 +67,13 @@
   border-radius: 5px;
   color: white;
   padding: 2px;
+  font-size: 14px;
+  height: 60px;
 }
 
 .Form__tag {
   background-color: white;
-  opacity: 0.6;
+  opacity: 0.5;
   color: #e25b52;
   display: inline-block;
   padding: 5px;
@@ -82,7 +88,7 @@
 }
 
 .Form__tag:hover {
-  opacity: 1;
+  opacity: .7;
 }
 
 .Form__tag--selected {
