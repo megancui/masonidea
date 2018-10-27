@@ -1,18 +1,18 @@
 import React from "react";
 import "./NavBar.css";
 /*import { Home } from "./Home";
-import { Mission } from "./Mission";
+import { Mission } from "./Mission";*/
 import { Team } from "./Team";
-import { Add } from "./Add";*/
+import { App } from "./App";
 
 export class NavBar extends React.Component {
-  /*goToAdd() {
-    ReactDOM.render(<Add />, document.getElementById("root"));
+  goToAdd() {
+    ReactDOM.render(<App />, document.getElementById("root"));
   }
   goToTeam() {
     ReactDOM.render(<Team />, document.getElementById("root"));
   }
-  goToMission() {
+  /*goToMission() {
     ReactDOM.render(<Mission />, document.getElementById("root"));
   }
   goToHome() {
@@ -21,10 +21,10 @@ export class NavBar extends React.Component {
   render() {
     return (
       <div className="NavBar-overall">
-        <div className="NavBar-blocks">Home</div>
-        <div className="NavBar-blocks">Mission</div>
-        <div className="NavBar-blocks">Team</div>
-        <div className="NavBar-blocks NavBar-add-an-idea">Add an Idea</div>
+        <div className="NavBar-blocks" onClick={this.goToAdd}>Home</div>
+        <div className="NavBar-blocks" onClick={this.goToAdd}>Mission</div>
+        <div className="NavBar-blocks" onClick={this.goToTeam}>Team</div>
+        <div className="NavBar-blocks NavBar-add-an-idea" onClick={this.goToAdd}>Add an Idea</div>
       </div>
     );
   }
