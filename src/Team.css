@@ -1,0 +1,55 @@
+.Team-overall {
+  margin: 20px;
+  padding: 20px 30px 20px 30px;
+  border-radius: 20px;
+  /*background-color: #477694;*/
+  background-color: #2a546f;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.Team-overall h1 {
+  font-size: 40px;
+}
+.Team-card {
+  margin: 5px;
+  padding: 5px;
+  width: 150px;
+  min-height: 150px;
+  border-radius: 10px;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: top;
+  /*border: solid #66121c 2px;*/
+  background-color: #e82239;
+  /*background-color: #9b1c2b;*/
+  /*background-color: #e25b52;*/
+  border: solid #66121c 2px;
+}
+.Team-card img {
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+.Team-card i {
+  font-size: 15px;
+}
+
+.Team-student_section {
+  margin-left: 30px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+}
+.Team-admin_section {
+  margin-left: 30px;
+  margin-bottom: 8px;
+  margin-top: 30px;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+}
