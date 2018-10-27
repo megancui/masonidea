@@ -9,6 +9,12 @@
   box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
   position: relative;
   text-align: left;
+  transition: .3s box-shadow;
+  cursor: pointer;
+}
+
+.IdeaBox__container:hover {
+  box-shadow: 6px 6px 9px 0 rgba(0,0,0,0.5);
 }
 
 .IdeaBox__title {
@@ -52,4 +58,100 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: white;
+}
+
+.IdeaBox__modal {
+  min-width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background-color: #2A546F;
+  color: white;
+  outline: none;
+  border-radius: 8px;
+}
+
+.IdeaBox__modal h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin: 0;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.IdeaBox__modal h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.IdeaBox__modal p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+
+.Modal__idea {
+  background-color: white;
+  color: #2A546F;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.Modal__close {
+  cursor: pointer;
+  color: white;
+  float: right;
+  font-size: 30px;
+  text-align: center;
+  opacity: .7;
+  transition: .3s opacity;
+}
+
+.Modal__close:hover {
+  opacity: 1;
+}
+
+.Modal__submit {
+  background-color: #E25B52;
+  color: white;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 20px;
+  transition: .3s background-color, .3s color;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+}
+
+.Modal__submit:hover {
+  background-color: white;
+  color: #2A546F;
+}
+
+.Modal__section {
+  display: flex;
+}
+
+.Modal__section input {
+  background-color: #2A546F;
+  border: 1px white solid;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 15px;
+  flex: 2;
+  color: white;
+  padding: 5px;
+}
+
+.Modal__section label {
+  font-size: 18px;
+  margin-right: 5px;
 }

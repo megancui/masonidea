@@ -40,7 +40,7 @@ class App extends Component {
   }
 
   rerender = () => {
-    //console.log("rerender");
+    console.log("rerender");
     IdeasAPI.getIdeas(this.loadIdeas);
   }
 
@@ -57,7 +57,7 @@ class App extends Component {
           <Form callback={this.rerender}/>
         { this.state.loaded ?
             this.state.ideas.map((item, i) => {
-              return (<IdeaBox key={item.id} title={item.fields.idea} description={item.fields.description} tags={item.fields.tags} isClaimed={ item.fields.isClaimed === 0 ? false : true} />)
+              return (<IdeaBox rerender={this.rerender} key={Math.random()} id={item.id} title={item.fields.idea} description={item.fields.description} tags={item.fields.tags} isClaimed={ item.fields.isClaimed === 0 ? false : true} />)
             })
 
         :
