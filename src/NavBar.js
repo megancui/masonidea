@@ -4,7 +4,7 @@ import "./NavBar.css";
 /*import { Home } from "./Home";
 import { Mission } from "./Mission";*/
 import { Team } from "./Team";
-import { App } from "./App";
+import App from "./App";
 
 export class NavBar extends React.Component {
   goToAdd() {
