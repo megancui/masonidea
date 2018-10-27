@@ -24,6 +24,12 @@ body {
   font-weight: 900;
   transition: .25s color;
 }
+@media only screen and (max-width: 600px) {
+    .NavBar-blocks {
+      margin-left: 3px;
+      font-size: 15px;
+    }
+}
 .NavBar-blocks:hover {
   /*margin-top: 1.6vh;
   margin-left: .6vw;
