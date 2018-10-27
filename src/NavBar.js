@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./NavBar.css";
 /*import { Home } from "./Home";
 import { Mission } from "./Mission";
@@ -22,10 +21,10 @@ export class NavBar extends React.Component {
   render() {
     return (
       <div className="NavBar-overall">
-        <div class="NavBar-blocks">Home</div>
-        <div class="NavBar-blocks">Mission</div>
-        <div class="NavBar-blocks">Team</div>
-        <div class="NavBar-blocks NavBar-add-an-idea">Add an Idea</div>
+        <div className="NavBar-blocks">Home</div>
+        <div className="NavBar-blocks">Mission</div>
+        <div className="NavBar-blocks">Team</div>
+        <div className="NavBar-blocks NavBar-add-an-idea">Add an Idea</div>
       </div>
     );
   }

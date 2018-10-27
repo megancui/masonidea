@@ -17,7 +17,7 @@ class Ideas extends React.Component {
   static updateIdea200() {
     axios.get(uri + "times")
       .then(function(response) {
-        console.log(response);
+
       })
       .catch(function(error) {
         console.log(error);
@@ -48,8 +48,6 @@ class Ideas extends React.Component {
           }
         }
 
-        console.log(data);
-
         callback(data);
 
       })
@@ -63,7 +61,6 @@ class Ideas extends React.Component {
 
     axios.post(uri + "ideas/add", data)
       .then(function(response) {
-        console.log(response);
         callback();
         //alert("Your idea has been added. Refresh the page to see it.");
       })
@@ -75,8 +72,6 @@ class Ideas extends React.Component {
   static claimIdea(data, callback) {
     axios.post(uri + "ideas/claim", data)
       .then(function(response) {
-        console.log(response);
-        console.log("sent");
         callback();
         //alert("Your idea has been added. Refresh the page to see it.");
       })

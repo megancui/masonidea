@@ -1,4 +1,4 @@
-import React, { Component, propTypes } from 'react';
+import React, { Component } from 'react';
 import './Form.css';
 import IdeasAPI from './API/Ideas';
 //import Textarea from 'react-textarea-count';

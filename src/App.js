@@ -32,7 +32,6 @@ class App extends Component {
   // }
 
   loadIdeas = (data) => {
-    console.log(data);
     this.setState({
       ideas: data,
       loaded: true,
