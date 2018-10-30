@@ -7,6 +7,8 @@ import IdeasAPI from './API/Ideas';
 import Form from './Form';
 import { NavBar } from './NavBar';
 
+import logo from './logo.png';
+
 import ReactLoading from 'react-loading';
 
 // <IdeaBox title="IDEA 1" description="DESCRIPTION 1" tags={["A", "B", "C"]} isClaimed={true} />
@@ -48,6 +50,7 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <div className="App__title">
+          <img className="App__logo" src={logo} />
           <h1>Ignite Your Vision</h1>
           <p>Mason High School's Big Idea Hunt</p>
         </div>
