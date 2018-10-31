@@ -61,7 +61,9 @@ class App extends Component {
           <Form callback={this.rerender}/>
         { this.state.loaded ?
             this.state.ideas.map((item, i) => {
-              return (<IdeaBox rerender={this.rerender} key={Math.random()} id={item.id} title={item.fields.idea} description={item.fields.description} tags={item.fields.tags} isClaimed={ item.fields.isClaimed === 0 ? false : true} />)
+              if (item.fields.isApproved == 1) {
+                return (<IdeaBox rerender={this.rerender} key={Math.random()} id={item.id} title={item.fields.idea} description={item.fields.description} tags={item.fields.tags} isClaimed={ item.fields.isClaimed === 0 ? false : true} />)
+              }
             })
 
         :
