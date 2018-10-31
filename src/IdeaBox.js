@@ -112,7 +112,7 @@ class IdeaBox extends React.Component {
           <h1>Claim This Idea</h1>
           <div className="Modal__close" onClick={this.closeModal}>x</div>
           <br/>
-          <h3>Idea Overview</h3>
+          <h3>If you like this idea and want to work on it to submit to Ignite Your Vision, then claim it:</h3>
           <div className="Modal__idea">
             <p><b>{this.state.title}</b></p>
             <p>{this.state.description}</p>

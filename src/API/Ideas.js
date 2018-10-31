@@ -27,7 +27,7 @@ class Ideas extends React.Component {
   static getIdeas(callback) {
     axios.get(uri + "ideas/get")
       .then(function(response) {
-        //console.log(response);
+        console.log(response);
 
         var data = response.data;
 
