@@ -166,7 +166,7 @@ export class Team extends React.Component {
             <span>-</span>
             <br />
             <span>
-              <i>Launch, Planning/i>
+              <i>Launch, Planning</i>
             </span>
           </div>
           <div className="Team-card">
