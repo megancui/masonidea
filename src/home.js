@@ -13,7 +13,6 @@ export class Home extends React.Component {
 
       <div id="bg">
         <NavBar />
-        <div align="center">
           <br />
           <br />
           <br />
@@ -128,7 +127,6 @@ export class Home extends React.Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }
