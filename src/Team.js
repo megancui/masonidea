@@ -6,9 +6,7 @@ import megan from "./teampics/megan.png";
 import will from "./teampics/will.JPG";
 import kip from "./teampics/kip.jpeg";
 import kevin from "./teampics/kevin.jpeg";
-import bumiller from "./teampics/bumiller.jpg";
 import dodd from "./teampics/dodd.jpg";
-import mccormick from "./teampics/mccormick.gif";
 import cooper from "./teampics/cooper.jpg";
 import xander from "./teampics/xander.jpeg";
 import jake from "./teampics/jake.jpeg";
@@ -24,6 +22,10 @@ import kirsten from "./teampics/kirsten.jpeg";
 import taylor from "./teampics/taylor.jpeg";
 import maddie from "./teampics/maddie.jpeg";
 import distel from "./teampics/distel.jpg";
+import tina from "./teampics/tina.jpeg";
+import priya from "./teampics/priya.jpeg";
+import mccormick from "./teampics/mccormick.jpg";
+import bumiller from "./teampics/bumiller.jpg";
 
 export class Team extends React.Component {
   render() {
@@ -33,6 +35,67 @@ export class Team extends React.Component {
         <div className="Team-overall">
           <div className="Team-student_section">
             <span>Our Team</span>
+          </div>
+
+          <div className="Team-card">
+            <img src={priya} alt="priya" />
+            <span>Priya Sharma</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch</i>
+            </span>
+          </div>
+          <div className="Team-card">
+            <img src={savannah} alt="savannah" />
+            <span>Savannah Quach</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch</i>
+            </span>
+          </div>
+          <div className="Team-card">
+            <img src={volpenhein} alt="sample" />
+            <span>Luke Volpenhein</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch</i>
+            </span>
+          </div>
+          <div className="Team-card">
+            <img src={tina} alt="tina" />
+            <span>Tina Sandhu</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch</i>
+            </span>
+          </div>
+          <div className="Team-card">
+            <img src={volpenhein} alt="sample" />
+            <span>Luke Volpenhein</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch</i>
+            </span>
+          </div>
+          <div className="Team-card">
+            <img src={taylor} alt="taylor" />
+            <span>Taylor Kiss</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch</i>
+            </span>
           </div>
           <div className="Team-card">
             <img src={megan} alt="megan" />
@@ -65,28 +128,38 @@ export class Team extends React.Component {
             </span>
           </div>
           <div className="Team-card">
-            <img src={savannah} alt="savannah" />
-            <span>Savannah Quach</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>Launch</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={kip} alt="kip" />
-            <span>Kip Roe</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>Branding & PR</i>
-            </span>
-          </div>
-          <div className="Team-card">
             <img src={kevin} alt="kevin" />
             <span>Kevin Tang</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch, Planning</i>
+            </span>
+          </div>
+          <div className="Team-card">
+            <img src={xander} alt="xander" />
+            <span>Xander Wells</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch, Planning</i>
+            </span>
+          </div>
+          <div className="Team-card">
+            <img src={priyanka} alt="priyanka" />
+            <span>Priyanka Paradkar</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch, Planning</i>
+            </span>
+          </div>
+          <div className="Team-card">
+            <img src={kirsten} alt="kirsten" />
+            <span>Kirsten Riley</span>
             <br />
             <span>-</span>
             <br />
@@ -105,36 +178,6 @@ export class Team extends React.Component {
             </span>
           </div>
           <div className="Team-card">
-            <img src={xander} alt="xander" />
-            <span>Xander Wells</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>Launch, Planning</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={jake} alt="jake" />
-            <span>Jake Snyder</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>Branding & PR</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={quinn} alt="quinn" />
-            <span>Quinn Robinson</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>Video Production</i>
-            </span>
-          </div>
-          <div className="Team-card">
             <img src={jordan} alt="jordan" />
             <span>Jordan Loewe</span>
             <br />
@@ -142,26 +185,6 @@ export class Team extends React.Component {
             <br />
             <span>
               <i>Planning</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={priyanka} alt="priyanka" />
-            <span>Priyanka Paradkar</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={kirsten} alt="kirsten" />
-            <span>Kirsten Riley</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>Launch, Planning</i>
             </span>
           </div>
           <div className="Team-card">
@@ -175,151 +198,38 @@ export class Team extends React.Component {
             </span>
           </div>
           <div className="Team-card">
-            <img src={taylor} alt="taylor" />
-            <span>Taylor Kiss</span>
+            <img src={quinn} alt="quinn" />
+            <span>Quinn Robinson</span>
             <br />
             <span>-</span>
             <br />
             <span>
-              <i>Launch</i>
+              <i>Video Production</i>
             </span>
           </div>
           <div className="Team-card">
-            <img src={volpenhein} alt="sample" />
-            <span>Luke Volpenhein</span>
+            <img src={jake} alt="jake" />
+            <span>Jake Snyder</span>
             <br />
             <span>-</span>
             <br />
             <span>
-              <i>Launch</i>
+              <i>Branding & PR</i>
             </span>
           </div>
           <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
+            <img src={kip} alt="kip" />
+            <span>Kip Roe</span>
             <br />
             <span>-</span>
             <br />
             <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
-            </span>
-          </div>
-          <div className="Team-card">
-            <img src={sample} alt="sample" />
-            <span>sample</span>
-            <br />
-            <span>-</span>
-            <br />
-            <span>
-              <i>sample</i>
+              <i>Branding & PR</i>
             </span>
           </div>
 
-          <div className="Team-admin_section">
-            <span>Administration</span>
-          </div>
           <div className="Team-card">
-            <img src={sample} alt="bumiller" />
+            <img src={bumiller} alt="bumiller" />
             <span>Shanna Bumiller</span>
             <br />
             <span>-</span>
@@ -359,7 +269,7 @@ export class Team extends React.Component {
             </span>
           </div>
           <div className="Team-card">
-            <img src={sample} alt="mccormick" />
+            <img src={mccormick} alt="mccormick" />
             <span>Christine McCormick</span>
             <br />
             <span>-</span>
