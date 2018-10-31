@@ -111,17 +111,21 @@ export class Home extends React.Component {
               <h1> What Is the Process? </h1>
 
               <div id="what">
-                <ol>
+                <ul>
                   <li> Ideas are submitted throughout November </li>
+                  <br/>
                   <li> Ideas are voted on in December </li>
+                  <br/>
                   <li>
-                    The top idea teams will go through Human-Centered Design
-                    training in order to better implement and refine their
-                    ideas.{" "}
+                    The top idea teams will go through<br/>
+                    Human-Centered Design training in order<br/>
+                    to better implement and refine their ideas.{" "}
                   </li>
+                  <br/>
                   <li> We go through the second round of voting </li>
+                  <br/>
                   <li> Top ideas are funded! </li>
-                </ol>
+                </ul>
                 <br />
               </div>
             </div>
