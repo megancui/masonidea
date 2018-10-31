@@ -8,6 +8,10 @@ import { NavBar } from "./NavBar";
 import App from "./App";
 
 export class Home extends React.Component {
+  goToAdd() {
+    ReactDOM.render(<App />, document.getElementById("root"));
+  }
+  
   render() {
     return (
 
@@ -18,9 +22,7 @@ export class Home extends React.Component {
 
           <div className="containor">
             <div className="frist">
-              <a href="masonignite.com" target="_blank">
-                <img src={logo} width="300" height="auto" />
-              </a>
+                <img src={logo} width="300" height="auto" onClick={this.goToAdd}/>
             </div>
             <div className="second">
               <a
