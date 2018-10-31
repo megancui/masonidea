@@ -85,6 +85,10 @@ export class Home extends React.Component {
               </div>
             </div>
           </div>
+
+          <div className="footer">
+            Made with	&#x2764; by <a href="https://masonhackclub.com">Mason Hack Club</a>.
+          </div>
         </div>
     );
   }
