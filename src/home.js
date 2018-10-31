@@ -3,13 +3,13 @@ import ReactDOM from "react-dom";
 import logo from "/pics/Idealogo.jpg";
 import logo2 from "/pics/k12.jpg";
 import "./home.css";
-/*import { Home } from "./Home";
-import { Mission } from "./Mission";*/
-/*import { Team } from "./Team";*/
-/*import App from "./App";*/
+import { Home } from "./Home";
+/*import { Mission } from "./Mission";*/
+import { Team } from "./Team";
+import App from "./App";
 
 export class Home extends React.Component {
-  /*goToAdd() {
+  goToAdd() {
     ReactDOM.render(<App />, document.getElementById("root"));
   }
   goToTeam() {
@@ -17,10 +17,10 @@ export class Home extends React.Component {
   }*/
   /*goToMission() {
     ReactDOM.render(<Mission />, document.getElementById("root"));
-  }
+  }*/
   goToHome() {
     ReactDOM.render(<Home />, document.getElementById("root"));
-  }*/
+  }
   render() {
     return (
       <div id="bg">
