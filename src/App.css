@@ -9,6 +9,10 @@
   margin-bottom: 10px;
 }
 
+.App-added-text{
+ font-size: 50px; 
+}
+
 .App__title p {
   font-family: "Roboto", cursive;
   text-align: center;
