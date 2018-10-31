@@ -1,29 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import logo from "/pics/Idealogo.jpg";
-import logo2 from "/pics/k12.jpg";
+import logo from "./pics/Idealogo.jpg";
+import logo2 from "./pics/k12.jpg";
 import "./home.css";
 import { Home } from "./Home";
 /*import { Mission } from "./Mission";*/
+import { NavBar } from "./NavBar";
 import { Team } from "./Team";
 import App from "./App";
 
 export class Home extends React.Component {
-  goToAdd() {
-    ReactDOM.render(<App />, document.getElementById("root"));
-  }
-  goToTeam() {
-    ReactDOM.render(<Team />, document.getElementById("root"));
-  }*/
-  /*goToMission() {
-    ReactDOM.render(<Mission />, document.getElementById("root"));
-  }*/
-  goToHome() {
-    ReactDOM.render(<Home />, document.getElementById("root"));
-  }
   render() {
     return (
+      
       <div id="bg">
+        <NavBar />
         <div align="center">
           <br />
           <br />
