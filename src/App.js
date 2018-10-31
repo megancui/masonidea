@@ -53,6 +53,7 @@ class App extends Component {
           <img className="App__logo" src={logo} />
           <h1>Ignite Your Vision</h1>
           <p>Mason High School's Big Idea Hunt</p>
+          <p>This page is for brainstorming. You can add extra ideas and claim ideas to tackle. To officially submit to the Ignite Your Vision challenge, <a href="https://helloignite.io/static/app/index.html#/event/masonCounty2018/static/Overview" target="_blank">please visit the official entry page.</a></p>
         </div>
 
         <Masonry className="App__masonry" options={{transitionDuration: 50}}>
