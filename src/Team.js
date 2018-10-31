@@ -194,7 +194,7 @@ export class Team extends React.Component {
             <span>-</span>
             <br />
             <span>
-              <i>Video Production</i>
+              <i>Branding & PR</i>
             </span>
           </div>
           <div className="Team-card">
