@@ -105,6 +105,20 @@ class Form extends Component {
     }
   }
 
+  handleSubmit = () => {
+    IdeasAPI.addIdea(this.getData(), this.props.callback);
+    this.setState({
+      title: "",
+      description: "",
+      h1: "",
+      h2: "",
+      h3: "",
+      only3: "",
+      name: "",
+      email: "",
+    })
+  }
+
 
   render() {
     //console.log(this.state.h1 + " " + this.state.h2 + " " + this.state.h3);
@@ -159,7 +173,7 @@ class Form extends Component {
               <label>Your email: </label>
               <input type="text" value={this.state.email} name="email" onChange={evt => this.updateState(evt)} />
             </div>
-          <button className="Form__submit" onClick={() => IdeasAPI.addIdea(this.getData(), this.props.callback)}>Submit it</button>
+          <button className="Form__submit" onClick={this.handleSubmit}>Submit it</button>
         </div>
 
       </div>
