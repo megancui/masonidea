@@ -20,7 +20,7 @@ export class Home extends React.Component {
 
           <div className="containor">
             <div className="frist">
-              <a href="https://bigideahunt.netlify.com/" target="_blank">
+              <a href="https://masonignite.com" target="_blank">
                 <img src={logo} width="300" height="auto" />
               </a>
             </div>
