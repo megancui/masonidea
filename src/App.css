@@ -9,16 +9,16 @@
   margin-bottom: 10px;
 }
 
-#App-added-text{
-  font-size: 35px; 
-}
-
 .App__title p {
   font-family: "Roboto", cursive;
   text-align: center;
   color: #2a546f;
   font-size: 30px;
   margin-top: 0px;
+}
+
+#App-added-text{
+  font-size: 35px; 
 }
 
 .App__informationContainer {
