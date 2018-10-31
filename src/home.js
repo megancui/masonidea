@@ -15,8 +15,6 @@ export class Home extends React.Component {
         <NavBar />
           <br />
           <br />
-          <br />
-          <br />
 
           <div className="containor">
             <div className="frist">
@@ -35,6 +33,8 @@ export class Home extends React.Component {
 
             <div id="clear" />
 
+            <br />
+            <br />
             <br />
             <br />
             <br />
