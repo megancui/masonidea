@@ -228,6 +228,9 @@ export class Team extends React.Component {
             </span>
           </div>
 
+          <div className="Team-admin_section">
+
+          </div>
           <div className="Team-card">
             <img src={bumiller} alt="bumiller" />
             <span>Shanna Bumiller</span>
