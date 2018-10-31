@@ -18,28 +18,28 @@ body {
   width: 300px;
   float: left;
   height: 300px;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .second {
   width: 300px;
   float: right;
   height: 300px;
-  margin-right: 20%;
+  margin-right: 15%;
   margin-top: 10%;
   /* background-color: green;*/
 }
 
 #FT {
   float: left;
-  margin-left: 16%;
+  margin-left: 11%;
   text-align: center;
 }
 
 #ST {
   text-align: center;
   float: right;
-  margin-right: 14%;
+  margin-right: 9%;
 }
 
 #clear {
