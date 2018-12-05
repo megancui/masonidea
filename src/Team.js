@@ -28,6 +28,7 @@ import mccormick from "./teampics/mccormick.jpg";
 import bumiller from "./teampics/bumiller.jpg";
 import IMG_0696 from "./teampics/IMG_0696.jpeg"; //nihal
 import messer from "./teampics/messer.jpeg";
+import glaser from "./teampics/glaser.jpg";
 
 export class Team extends React.Component {
   render() {
@@ -162,6 +163,16 @@ export class Team extends React.Component {
           <div className="Team-card">
             <img src={messer} alt="messer" />
             <span>Liberty Messer</span>
+            <br />
+            <span>-</span>
+            <br />
+            <span>
+              <i>Launch, Planning</i>
+            </span>
+          </div>
+          <div className="Team-card">
+            <img src={glaser} alt="glaser" />
+            <span>Audrey Glaser</span>
             <br />
             <span>-</span>
             <br />
